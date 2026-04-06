@@ -11,7 +11,7 @@ public class Wordle {
             PrintWriter log = new PrintWriter("game.log");
             WordleDictionaryLoader dictionaryLoader = new WordleDictionaryLoader();
 
-            WordleDictionary dictionary = dictionaryLoader.LoadFromFile("words_ru.txt");
+            WordleDictionary dictionary = dictionaryLoader.loadFromFile("words_ru.txt");
             List<String> words = dictionary.filterWordsByLength(5); // Предполагаем, что все слова в словаре длиной 5 букв
             String answer = words.get((int) (Math.random() * words.size()));
 

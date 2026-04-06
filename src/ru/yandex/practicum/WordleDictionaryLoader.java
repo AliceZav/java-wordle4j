@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WordleDictionaryLoader {
-    public WordleDictionary LoadFromFile (String path) throws IOException {
+    public WordleDictionary loadFromFile(String path) throws IOException {
         List<String> words = new ArrayList<>();
 
         try (BufferedReader br = Files.newBufferedReader(Paths.get(path), UTF_8)) {
